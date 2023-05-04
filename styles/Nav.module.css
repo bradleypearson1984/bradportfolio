@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    justify-content: flex-end;
+}
+
+.nav > a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+
+}

@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
 import ProjectCard from '@/components/ProjectCard';
 import projectData from '@/public/project-data';
+import Form from '@/components/Form';
 
 // icon image imports
 
@@ -64,7 +65,7 @@ export default function Home() {
               </section>
           <section className={styles.pageSection} >
             <h2>Contact</h2>
-           
+           <Form />
           </section>
       </main>
     </>

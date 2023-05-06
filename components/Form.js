@@ -1,20 +1,56 @@
 import { useState } from 'react';
 import styles from '@/styles/Form.module.css'
+
+
 function Form(props) {
-    const [formState, setFormState] = useState({
+    const getNewState = () => ({
         name: '',
         email: '',
         message: '',
     });
 
-    const handleChange = (event) => {};
-    const handleSubmit = (event) => {};
+    const encode = ({name, email, message}) => {
+        return `form-name=contact&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}${encodeURIComponent(message)}`
+        
+    };
 
+    const[formState, setFormState] = useState(getNewState)
+
+    const handleChange = (event) => {
+        setFormState({
+
+            ...formState,
+            [event.target.name]: event.target.value
+        }
+    )
+    };
+    const handleSubmit = async(event) => {
+
+        event.preventDefault();
+        await fetch ('/', {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/x-www-form-urlencoded'
+            },
+            body: encode(formState)
+        })
+        console.log(formState)
+        setFormState(getNewState);
+    };
     
     const { name, email, message } = formState;
 
     return (
-        <form onSubmit={handleSubmit} className={styles.form} >
+        <form 
+        onSubmit={handleSubmit} 
+        className={styles.form}
+        data-netlify="true"
+        name="contact">
+
+            <input 
+            type="hidden" 
+            name="form-name" 
+            value="contact" />
 
         <label htmlFor='name' >Name:</label>
           <input 
@@ -36,7 +72,6 @@ function Form(props) {
             </label>  
           <textarea 
           id="message"
-          type="text" 
           name="message"
           onChange={handleChange} 
           value={message} ></textarea>

@@ -10,7 +10,7 @@ function Form(props) {
     });
 
     const encode = ({name, email, message}) => {
-        return `form-name=contact&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}${encodeURIComponent(message)}`
+        return `form-name=contact&name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&${encodeURIComponent(message)}`
         
     };
 

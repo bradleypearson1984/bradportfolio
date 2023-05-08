@@ -14,7 +14,7 @@ function Form(props) {
         
     };
 
-    const[formState, setFormState] = useState(getNewState)
+    const[formState, setFormState] = useState(getNewState())
 
     const handleChange = (event) => {
         setFormState({
@@ -35,7 +35,7 @@ function Form(props) {
             body: encode(formState)
         })
         console.log(formState)
-        setFormState(getNewState);
+        setFormState(getNewState());
     };
     
     const { name, email, message } = formState;

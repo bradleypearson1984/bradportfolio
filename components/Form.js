@@ -45,6 +45,7 @@ function Form(props) {
         onSubmit={handleSubmit} 
         className={styles.form}
         data-netlify="true"
+        data-netlify-recaptcha="true"
         name="contact">
 
             <input 
@@ -75,6 +76,7 @@ function Form(props) {
           name="message"
           onChange={handleChange} 
           value={message} ></textarea>
+          <div data-netlify-recaptcha="true"> </div>
         <input type="submit" value="Send Message"/>
       </form>
     )

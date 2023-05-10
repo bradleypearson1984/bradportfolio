@@ -118,3 +118,15 @@ main {
     color-scheme: dark;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .invert-svg img {
+    filter: invert(1);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .invert-svg img {
+    filter: none;
+  }
+}

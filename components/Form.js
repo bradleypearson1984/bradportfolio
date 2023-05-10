@@ -46,12 +46,19 @@ function Form(props) {
         className={styles.form}
         data-netlify="true"
         data-netlify-recaptcha="true"
+        netlify-honeypot="bot-field"
         name="contact">
 
             <input 
             type="hidden" 
             name="form-name" 
             value="contact" />
+
+<p class="hidden">
+    <label>
+      Don’t fill this out if you’re human, like I am: <input name="bot-field" />
+    </label>
+  </p>
 
         <label htmlFor='name' >Name:</label>
           <input 

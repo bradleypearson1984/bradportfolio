@@ -6,6 +6,8 @@ import ProjectCard from '@/components/ProjectCard';
 import projectData from '@/public/project-data';
 import Form from '@/components/Form';
 import Navbar from '@/components/Navbar';
+import Main from '@/components/Main';
+import About from '@/components/About'
 // icon image imports
 
 
@@ -24,6 +26,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Main />
+      <About />
+
       <main className={`${inter.className} ${styles.homeMain}`}>
       <section className={styles.pageSection} >
 

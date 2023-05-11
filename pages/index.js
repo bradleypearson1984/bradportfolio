@@ -5,7 +5,7 @@ import styles from '@/styles/Home.module.css';
 import ProjectCard from '@/components/ProjectCard';
 import projectData from '@/public/project-data';
 import Form from '@/components/Form';
-
+import Navbar from '@/components/Navbar';
 // icon image imports
 
 
@@ -23,6 +23,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
       <main className={`${inter.className} ${styles.homeMain}`}>
       <section className={styles.pageSection} >
 

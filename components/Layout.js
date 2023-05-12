@@ -5,8 +5,8 @@ import Footer from './Footer';
 function Layout(props) {
     return (
         <>
-            <Nav />
-            <Header />
+            {/* <Nav /> */}
+            {/* <Header /> */}
             {props.children}
             <Footer />
         </>

@@ -8,6 +8,7 @@ import Form from '@/components/Form';
 import Navbar from '@/components/Navbar';
 import Main from '@/components/Main';
 import About from '@/components/About'
+import Skills from '@/components/Skills'
 // icon image imports
 
 
@@ -28,27 +29,18 @@ export default function Home() {
       <Navbar />
       <Main />
       <About />
+      <Skills />
+
 
       <main className={`${inter.className} ${styles.homeMain}`}>
       <section className={styles.pageSection} >
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Mollitia fugiat quidem eveniet, praesentium facere nihil iusto perspiciatis distinctio. 
-          Itaque culpa et sit sapiente voluptate aperiam quasi beatae, adipisci hic debitis.
-          </p>
+        
       </section >
           <section className={`${styles.pageSection} ${styles.skillsSection} invert-svg`} >
             <h2>Skills</h2>
             <div>
-              <Image src="/html5_icon.svg" width={64} height={64} alt="html5" />
-              <Image src="/css3_icon.svg" width={64} height={64} alt="css3" />
-              <Image src="/js_icon.svg" width={64} height={64} alt="javascript" />
-              <Image src="/react_icon.svg" width={64} height={64} alt="react" />
-              <Image src="/sass_icon.svg" width={64} height={64} alt="sass" />
-              <Image src="/nodejs_icon.svg" width={64} height={64} alt="nodejs" />
-              <Image src="/server_icon.svg" width={64} height={64} alt="mongodb" />
-              <Image src="/python_icon.svg" width={64} height={64} alt="python" />
+              
             </div>
           </section  >
           <section className={styles.pageSection} >

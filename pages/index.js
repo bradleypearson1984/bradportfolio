@@ -28,7 +28,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
       <Main />
       <About />
       <Skills />
@@ -37,11 +36,8 @@ export default function Home() {
 
 
 
-      <main className={`${inter.className} ${styles.homeMain}`}>
-      <section className={styles.pageSection} >
-
-        
-      </section >
+   
+   
           
           {/* <section className={styles.pageSection} >
             <h2>Projects</h2>
@@ -65,7 +61,7 @@ export default function Home() {
             <h2>Contact</h2>
            <Form />
           </section> */}
-      </main>
+      
     </>
   );
 }

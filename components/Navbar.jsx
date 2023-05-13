@@ -31,19 +31,19 @@ return (
                 {/* <Image src="..public/navlogo.png" alt="/" />" */}
 
             <ul className='hidden md:flex' >
-                <Link href="/" >
+                <Link href="/#home" scroll={false} >
                     <li className='ml-10 text-sm uppercase hover:border-b' >Home</li>
                 </Link>
-                <Link href="/#about" >
+                <Link href="/#about" scroll={false} >
                     <li className='ml-10 text-sm uppercase hover:border-b' >About</li>
                 </Link>
-                <Link href="/#skills" >
+                <Link href="/#skills" scroll={false} >
                     <li className='ml-10 text-sm uppercase hover:border-b' >Skills</li>
                 </Link>
-                <Link href="/#projects" >
+                <Link href="/#projects" scroll={false} >
                     <li className='ml-10 text-sm uppercase hover:border-b' >Projects</li>
                 </Link>
-                <Link href="/#contact" >
+                <Link href="/#contact" scroll={false} >
                     <li className='ml-10 text-sm uppercase hover:border-b' >Contact</li>
                 </Link>
             </ul>
@@ -73,20 +73,20 @@ return (
             </div>
             <div className='py-4 flex flex-col' >
                 <ul className='uppercase' >
-                    <Link href='/'>
-                        <li className='py-4 text-sm' >Home </li>
+                    <Link href='/#home' scroll={false} >
+                        <li onClick={()=> setNav(false)} className='py-4 text-sm' >Home </li>
                     </Link>
-                    <Link href='/'>
-                        <li className='py-4 text-sm' >About </li>
+                    <Link href='/#about' scroll={false}>
+                        <li onClick={()=> setNav(false)} className='py-4 text-sm' >About </li>
                     </Link>
-                    <Link href='/'>
-                        <li className='py-4 text-sm' >Skills </li>
+                    <Link href='/#skills'scroll={false} >
+                        <li onClick={()=> setNav(false)} className='py-4 text-sm' >Skills </li>
                     </Link>
-                    <Link href='/'>
-                        <li className='py-4 text-sm' >Projects </li>
+                    <Link href='/#projects'scroll={false} >
+                        <li onClick={()=> setNav(false)} className='py-4 text-sm' >Projects </li>
                     </Link>
-                    <Link href='/'>
-                        <li className='py-4 text-sm' >Contact </li>
+                    <Link href='/#contact'scroll={false} >
+                        <li onClick={()=> setNav(false)} className='py-4 text-sm' >Contact </li>
                     </Link>
                 </ul>
                 <div className='pt-40' >

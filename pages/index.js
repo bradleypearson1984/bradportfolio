@@ -10,6 +10,7 @@ import Main from '@/components/Main';
 import About from '@/components/About'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects';
+import Contact from '@/components/Contact';
 // icon image imports
 
 
@@ -32,6 +33,8 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
+
 
 
       <main className={`${inter.className} ${styles.homeMain}`}>
@@ -58,10 +61,10 @@ export default function Home() {
               }
               </div>
               </section> */}
-          <section className={styles.pageSection} >
+          {/* <section className={styles.pageSection} >
             <h2>Contact</h2>
            <Form />
-          </section>
+          </section> */}
       </main>
     </>
   );

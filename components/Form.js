@@ -84,7 +84,7 @@ function Form(props) {
           onChange={handleChange} 
           value={message} ></textarea>
           <div data-netlify-recaptcha="true"> </div>
-        <input type="submit" value="Send Message"/>
+        <input type="submit" value="Send"/>
       </form>
     )
 

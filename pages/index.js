@@ -9,6 +9,7 @@ import Navbar from '@/components/Navbar';
 import Main from '@/components/Main';
 import About from '@/components/About'
 import Skills from '@/components/Skills'
+import Projects from '@/components/Projects';
 // icon image imports
 
 
@@ -30,6 +31,7 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
+      <Projects />
 
 
       <main className={`${inter.className} ${styles.homeMain}`}>
@@ -37,13 +39,8 @@ export default function Home() {
 
         
       </section >
-          <section className={`${styles.pageSection} ${styles.skillsSection} invert-svg`} >
-            <h2>Skills</h2>
-            <div>
-              
-            </div>
-          </section  >
-          <section className={styles.pageSection} >
+          
+          {/* <section className={styles.pageSection} >
             <h2>Projects</h2>
             <div className={styles.projectsWrapper} >
 
@@ -60,7 +57,7 @@ export default function Home() {
                 })
               }
               </div>
-              </section>
+              </section> */}
           <section className={styles.pageSection} >
             <h2>Contact</h2>
            <Form />

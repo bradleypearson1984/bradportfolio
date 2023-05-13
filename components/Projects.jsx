@@ -3,6 +3,7 @@ import React from 'react'
 import thisDogImg from '../public/ThisDog.png'
 import cursedItemsImg from '../public/CursedItems.png'
 import canadiansImg from '../public/Canadians.png'
+import petPurposeImg from '../public/PetPurposeApp.png'
 import Link from 'next/link'
 import ProjectItem from './ProjectItem'
 
@@ -16,16 +17,25 @@ const Projects = () => {
 <ProjectItem 
 title='How Bout This Dog' 
 backgroundImg={thisDogImg} 
+language='javaScript, jQuery'
 projectUrl='/thisdog' 
 />
 <ProjectItem 
 title='Cursed Items' 
-backgroundImg={cursedItemsImg} 
+backgroundImg={cursedItemsImg}
+language='expressJS' 
 projectUrl='/curseditems' 
+/>
+<ProjectItem 
+title='Pet Purpose' 
+backgroundImg={petPurposeImg} 
+language='React'
+projectUrl='/petpurpose' 
 />
 <ProjectItem 
 title='Canadians' 
 backgroundImg={canadiansImg} 
+language='Python, Django'
 projectUrl='/canadians' 
 />
 

@@ -39,11 +39,18 @@ function Contact(props) {
             },
             body: encode(formState)
         })
+        // console.log('work')
       
         setFormState(getNewState());
     };
     
     const { name, email, message } = formState;
+
+    <p class="hidden">
+    <label>
+      Don’t fill this out if you’re human, like I am: <input name="bot-field" />
+    </label>
+  </p>
 
   return (
     <div className='w-full lg:g-screen' >

@@ -31,7 +31,7 @@ function Contact(props) {
     };
     const handleSubmit = async(event) => {
 
-        // event.preventDefault();
+        event.preventDefault();
         await fetch ('/', {
             method: 'POST',
             headers: {

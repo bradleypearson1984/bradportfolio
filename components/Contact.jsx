@@ -107,7 +107,7 @@ function Contact(props) {
              data-netlify="true"
              data-netlify-recaptcha="true"
              netlify-honeypot="bot-field"
-             name="contact"
+             name="contactMe"
              >
                 <input type="hidden" name="form-name" value='contact' />
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2' >

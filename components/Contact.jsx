@@ -63,7 +63,7 @@ function Contact(props) {
 {/* left */}
 <div id='contact' className='col-span-3 
                 lg:col-span-2 w-full h-full 
-                shadow-xl shadow-gray-400 
+                shadow-xl shadow-pink-200 
                 rounded-xl p-4' >
     <div className='lg:p-4 h-full' >
         <div>
@@ -82,12 +82,12 @@ function Contact(props) {
         <p className='uppercase pt-8' >Connect With Me</p>
         <div className='flex items-center justify-evenly py-4' >
         <div  className='rounded-full shadow-lg
-         shadow-gray-400 p-6 cursor-pointer 
+         shadow-pink-200 p-6 cursor-pointer 
          hover:scal-110 ease-in duration-300' >
                         <FaLinkedinIn />
                     </div>
                     <div  className='rounded-full 
-                            shadow-lg shadow-gray-400 p-6 
+                            shadow-lg shadow-pink-200 p-6 
                             cursor-pointer hover:scal-110 ease-in duration-300' >
                         <FaGithub />
                     </div>
@@ -98,7 +98,7 @@ function Contact(props) {
 {/* right */}
 
 <div className='col-span-3 
-        w-full h-auto shadow-xl shadow-gray-400 
+        w-full h-auto shadow-xl shadow-green-200 
         rounded-xl lg:p-4' >
     <div className='p-4' >
 

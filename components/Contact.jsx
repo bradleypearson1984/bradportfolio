@@ -60,9 +60,9 @@ function Contact() {
             <form  
             //  onSubmit={handleSubmit} 
              data-netlify="true"
-             data-netlify-recaptcha="true"
+            
              data-netlify-honeypot="bot-field"
-             action='/success'
+             action='/Success'
              name="contactMe"
              >
                 <input type="hidden" name="form-name" value='contactMe' />

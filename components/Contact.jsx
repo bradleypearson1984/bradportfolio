@@ -109,7 +109,7 @@ function Contact(props) {
              netlify-honeypot="bot-field"
              name="contactMe"
              >
-                <input type="hidden" name="form-name" value='contact' />
+                <input type="hidden" name="form-name" value='contactMe' />
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2' >
                     <div className='flex flex-col' >
                         <label className='uppercase text-sm py-2' >Name</label>

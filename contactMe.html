@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  
+             onSubmit={handleSubmit} 
+             data-netlify="true"
+             data-netlify-recaptcha="true"
+             netlify-honeypot="bot-field"
+             name="contactMe"
+             >
+                <input type="hidden" name="form-name" value='contactMe' />
+                <div className='grid md:grid-cols-2 gap-4 w-full py-2' >
+                    <div className='flex flex-col' >
+                        <label className='uppercase text-sm py-2' >Name</label>
+                        <input  className='border-2 rounded-lg p-3 flex border-gray-300' 
+                                 id="name"
+                                 type="text" 
+                                 name="name"
+                                 onChange={handleChange} 
+                                 value={name}
+                                />
+                    </div>
+                   
+                </div>
+                <div className='flex flex-col py-2' >
+                        <label className='uppercase text-sm py-2' >Email</label>
+                        <input  
+                        className='border-2 rounded-lg p-3 flex border-gray-300' 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        onChange={handleChange} 
+                        value={email}/>
+                </div>
+                
+                <div className='flex flex-col py-2' >
+                        <label className='uppercase text-sm py-2' >Message</label>
+                        <textarea className='border-2 rounded-lg border-gray-300' 
+                        rows='10'
+                        id="message"
+                        name="message"
+                        onChange={handleChange} 
+                        value={message} ></textarea>
+                </div>
+                <button className=' w-full p-4 text-gray-100 mt-4' >Send Message</button>
+            </form>
+</body>
+</html>

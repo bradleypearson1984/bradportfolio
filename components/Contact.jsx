@@ -5,19 +5,8 @@ import Link from 'next/link'
 import { useState } from 'react';
 
 
-function Contact(props) {
-    const getNewState = () => ({
-        name: '',    
-        email: '',
-        message: '',
-    });
-
-    <p class="hidden">
-    <label>
-      Don’t fill this out if you’re human, like I am: <input name="bot-field" />
-    </label>
-  </p>
-
+function Contact() {
+     
   return (
     <div className='w-full lg:g-screen' >
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full ' > 
@@ -72,11 +61,16 @@ function Contact(props) {
             //  onSubmit={handleSubmit} 
              data-netlify="true"
              data-netlify-recaptcha="true"
-             netlify-honeypot="bot-field"
+             data-netlify-honeypot="bot-field"
              action='/success'
              name="contactMe"
              >
                 <input type="hidden" name="form-name" value='contactMe' />
+            <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human, like I am: <input name="bot-field" />
+            </label>
+          </p>
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2' >
                     <div className='flex flex-col' >
                         <label className='uppercase text-sm py-2' >Name</label>
@@ -117,7 +111,7 @@ function Contact(props) {
             </div>
             <div className='flex justify-center py-12' >
                 <Link href='/'>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scal-110 ease-in duration-300' >
+                    <div className='rounded-full shadow-lg shadow-pink-200 p-4 cursor-pointer hover:scal-110 ease-in duration-300' >
                         <HiOutlineChevronDoubleUp  className='text-[#5651e5]' size={30} />
                     </div>
                 </Link>

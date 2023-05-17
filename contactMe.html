@@ -8,13 +8,19 @@
 </head>
 <body>
     <form  
-             onSubmit={handleSubmit} 
+            //  onSubmit={handleSubmit} 
              data-netlify="true"
              data-netlify-recaptcha="true"
-             netlify-honeypot="bot-field"
+             data-netlify-honeypot="bot-field"
+             action='/success'
              name="contactMe"
              >
                 <input type="hidden" name="form-name" value='contactMe' />
+            <p class="hidden">
+            <label>
+              Don’t fill this out if you’re human, like I am: <input name="bot-field" />
+            </label>
+          </p>
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2' >
                     <div className='flex flex-col' >
                         <label className='uppercase text-sm py-2' >Name</label>
@@ -22,7 +28,7 @@
                                  id="name"
                                  type="text" 
                                  name="name"
-                               
+                                
                                 />
                     </div>
                    
@@ -34,7 +40,7 @@
                         type="email" 
                         id="email" 
                         name="email"
-                      />
+                    />
                 </div>
                 
                 <div className='flex flex-col py-2' >
@@ -43,7 +49,8 @@
                         rows='10'
                         id="message"
                         name="message"
-                         ></textarea>
+               
+                        ></textarea>
                 </div>
                 <button className=' w-full p-4 text-gray-100 mt-4' >Send Message</button>
             </form>

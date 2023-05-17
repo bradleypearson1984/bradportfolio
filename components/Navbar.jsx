@@ -49,7 +49,9 @@ return (
 style={{backgroundColor: `${navBg}`}}
 className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100] ' } >
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16' >
-                {/* <Image src="..public/navlogo.png" alt="/" />" */}
+            <Link href="/#home" scroll={false}>
+            <Image src="/logoBPclear.png" width='87' height='35' alt="/" />
+            </Link>
 
             <ul 
             style= {{ color: `${linkColor}`}}
@@ -83,7 +85,9 @@ className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z
             <div >
                 <div>
                     <div className='flex w-full items-center justify-between' >
-                        {/* <Image src="..public/navlogo.png" width='87' height='35' alt="/" />" */}
+                        <Link href="/#home" scroll={false} >
+                        <Image src="/logoBPclear.png" width='87' height='35' alt="/" />
+                        </Link>
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer' >
                             <AiOutlineClose /> 
                         </div>

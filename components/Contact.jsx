@@ -41,9 +41,9 @@ function Contact(props) {
         })
         // console.log('work')
       
-        setFormState(getNewState());
+        // setFormState(getNewState());
+        window.location.href = '/Success';
     };
-    
     const { name, email, message } = formState;
 
     <p class="hidden">

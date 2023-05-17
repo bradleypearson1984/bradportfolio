@@ -12,40 +12,6 @@ function Contact(props) {
         message: '',
     });
 
-    const encode = ({name, email, message}) => {
-        return `form-name=contact&name=${encodeURIComponent(name)}
-        &email=${encodeURIComponent(email)}
-        &message=${encodeURIComponent(message)}`
-        
-    };
-
-    const[formState, setFormState] = useState(getNewState())
-
-    const handleChange = (event) => {
-        setFormState({
-
-            ...formState,
-            [event.target.name]: event.target.value
-        }
-    )
-    };
-    const handleSubmit = async(event) => {
-
-        event.preventDefault();
-        await fetch ('/', {
-            method: 'POST',
-            headers: {
-                'Content-type': 'application/x-www-form-urlencoded'
-            },
-            body: encode(formState)
-        })
-        // console.log('work')
-      
-        // setFormState(getNewState());
-        window.location.href = '/Success';
-    };
-    const { name, email, message } = formState;
-
     <p class="hidden">
     <label>
       Don’t fill this out if you’re human, like I am: <input name="bot-field" />
@@ -103,7 +69,7 @@ function Contact(props) {
     <div className='p-4' >
 
             <form  
-             onSubmit={handleSubmit} 
+            //  onSubmit={handleSubmit} 
              data-netlify="true"
              data-netlify-recaptcha="true"
              netlify-honeypot="bot-field"
@@ -118,8 +84,7 @@ function Contact(props) {
                                  id="name"
                                  type="text" 
                                  name="name"
-                                 onChange={handleChange} 
-                                 value={name}
+                                
                                 />
                     </div>
                    
@@ -131,8 +96,7 @@ function Contact(props) {
                         type="email" 
                         id="email" 
                         name="email"
-                        onChange={handleChange} 
-                        value={email}/>
+                    />
                 </div>
                 
                 <div className='flex flex-col py-2' >
@@ -141,8 +105,8 @@ function Contact(props) {
                         rows='10'
                         id="message"
                         name="message"
-                        onChange={handleChange} 
-                        value={message} ></textarea>
+               
+                        ></textarea>
                 </div>
                 <button className=' w-full p-4 text-gray-100 mt-4' >Send Message</button>
             </form>

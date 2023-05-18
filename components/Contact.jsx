@@ -18,7 +18,7 @@ function Contact() {
 {/* left */}
 <div id='contact' className='col-span-3 
                 lg:col-span-2 w-full h-full 
-                shadow-xl shadow-pink-200 
+                shadow-xl shadow-green-200 dark:shadow-2xl dark:shadow-pink-500
                 rounded-xl p-4' >
     <div className='lg:p-4 h-full' >
         <div>
@@ -37,19 +37,19 @@ function Contact() {
         <p className='uppercase pt-8' >Connect With Me</p>
         <div className='flex items-center justify-evenly py-4' >
         <div  className='rounded-full shadow-lg
-         shadow-pink-200 p-6 cursor-pointer 
+         shadow-green-200  dark:shadow-2xl dark:shadow-pink-500 p-6  cursor-pointer 
          hover:scal-110 ease-in duration-300' >
             <a href="https://www.linkedin.com/in/bradpearsonmedia/" target={'_blank'} >
 
-                        <FaLinkedinIn />
+                        <FaLinkedinIn className='dark:invert'/>
             </a>
                     </div>
                     <div  className='rounded-full 
-                            shadow-lg shadow-pink-200 p-6 
+                            shadow-lg shadow-green-200 dark:shadow-2xl dark:shadow-pink-500 p-6 
                             cursor-pointer hover:scal-110 ease-in duration-300' >
                          <a href="https://github.com/bradleypearson1984" target={'_blank'} >
 
-                        <FaGithub />
+                        <FaGithub className='dark:invert' />
                          </a>
                     </div>
         </div>
@@ -59,7 +59,7 @@ function Contact() {
 {/* right */}
 
 <div className='col-span-3 
-        w-full h-auto shadow-xl shadow-green-200 
+        w-full h-auto shadow-xl shadow-green-200 dark:shadow-2xl dark:shadow-pink-500
         rounded-xl lg:p-4' >
     <div className='p-4' >
 
@@ -79,7 +79,7 @@ function Contact() {
           </p>
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2' >
                     <div className='flex flex-col' >
-                        <label className='uppercase text-sm py-2' >Name</label>
+                        <label className='uppercase text-sm py-2 dark:text-pink-100 ' >Name</label>
                         <input  className='border-2 rounded-lg p-3 flex border-gray-300' 
                                  id="name"
                                  type="text" 
@@ -90,7 +90,7 @@ function Contact() {
                    
                 </div>
                 <div className='flex flex-col py-2' >
-                        <label className='uppercase text-sm py-2' >Email</label>
+                        <label className='uppercase text-sm py-2 dark:text-pink-100  ' >Email</label>
                         <input  
                         className='border-2 rounded-lg p-3 flex border-gray-300' 
                         type="email" 
@@ -100,15 +100,15 @@ function Contact() {
                 </div>
                 
                 <div className='flex flex-col py-2' >
-                        <label className='uppercase text-sm py-2' >Message</label>
-                        <textarea className='border-2 rounded-lg border-gray-300' 
+                        <label className='uppercase text-sm py-2  dark:text-pink-100  ' >Message</label>
+                        <textarea className='border-2 rounded-lg border-gray-300 ' 
                         rows='10'
                         id="message"
                         name="message"
                
                         ></textarea>
                 </div>
-                <button className=' w-full p-4 text-gray-100 mt-4' type='submit'>Send Message</button>
+                <button className=' w-full p-4 bg-pink-600 text-gray-100 mt-4' type='submit'>Send Message</button>
             </form>
         </div>
 </div>
@@ -117,8 +117,8 @@ function Contact() {
             </div>
             <div className='flex justify-center py-12' >
                 <Link href='/'>
-                    <div className='rounded-full shadow-lg shadow-pink-200 p-4 cursor-pointer hover:scal-110 ease-in duration-300' >
-                        <HiOutlineChevronDoubleUp  className='text-[#5651e5]' size={30} />
+                    <div className='rounded-full shadow-lg shadow-green-200 p-4 dark:shadow-2xl dark:shadow-pink-500 cursor-pointer hover:scal-110 ease-in duration-300' >
+                        <HiOutlineChevronDoubleUp  className='text-[#5651e5] dark:invert'  size={30} />
                     </div>
                 </Link>
             </div>

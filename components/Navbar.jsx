@@ -85,7 +85,7 @@ className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z
 
         <div className={
             nav 
-            ? ' fixed left-0 top-0 w-[75%] h-screen  bg-gradient-to-b from-teal-100 to-purple-200 p-10 ease-in duration-500 dark:bg-gradient-to-l from-gray-900 via-emerald-900 to-purple-900' 
+            ? ' fixed left-0 top-0 w-[75%] h-screen  bg-gradient-to-b from-teal-100 to-purple-200 p-10 ease-in duration-500 dark:bg-gradient-to-l dark:from-gray-900 dark-to-emerald-900 ' 
             : 'fixed left-[-100%] top-0  p-10 ease-in-duration-500'} >
             <div >
                 <div>

@@ -11,7 +11,7 @@ const Main = () => {
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center' >
             <div>
                 <Image  src="/logo2hex.png" width='200' height='200' alt="/" className='mx-auto'  /> 
-                <p className='uppercase text-sm tracking-widest text-gray-600'>
+                <p className='uppercase text-sm tracking-widest text-gray-600 dark:text-pink-500'>
                     Man + Machine
                 </p>
                 <h1 className='py-4 text-purple-900  dark:text-pink-200' >Hi I'm <span className='text-[#f34f85]  dark:text-green-200'>  Brad Pearson</span></h1>
@@ -19,12 +19,12 @@ const Main = () => {
                 <h1 className='py-2 text-purple-900  dark:text-pink-200 ' > Who Can Talk To <span className='text-[#e1287e] dark:text-green-200'>  Machines </span></h1>
                
                 <div className='flex items center justify-evenly max-w-[330px] mx-auto py-4' >
-                    <div  className='rounded-full shadow-lg shadow-pink-100 p-6 cursor-pointer hover:scal-110 ease-in duration-300' >
+                    <div  className='rounded-full shadow-lg shadow-green-100 dakr:shadow-xl dark:shadow-pink-500 p-6 cursor-pointer hover:scal-110 ease-in duration-300' >
                     <a href="https://www.linkedin.com/in/bradpearsonmedia/" target={'_blank'} >
                         <FaLinkedinIn />
                     </a>
                     </div>
-                    <div  className='rounded-full shadow-lg shadow-pink-100 p-6 cursor-pointer hover:scal-110 ease-in duration-300' >
+                    <div  className='rounded-full shadow-lg shadow-green-100 dakr:shadow-xl dark:shadow-pink-500 p-6 cursor-pointer hover:scal-110 ease-in duration-300' >
                     <a href="https://github.com/bradleypearson1984" target={'_blank'} >
                         <FaGithub />
                     </a>

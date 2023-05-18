@@ -21,8 +21,14 @@ const thisdog = () => {
                     <p>This app was built using vanilla javaScript and jQuery. The app connects to a dog photo API
                         and generates endless random photos of dogs. Finally, there is a source for dog photos on the internet. 
                     </p>
+                    <a href="https://pages.git.generalassemb.ly/brad-pearson-forever/Project-1/" target={'_blank'}>
                     <button className='px-8 py-2 mt-4 mr-8' >Demo</button>
+                    </a>
+
+                    <a href="https://git.generalassemb.ly/brad-pearson-forever/Project-1" target={'_blank'} >
                     <button className='px-8 py-2 mt-4' >Code</button> 
+                    </a>
+
 
                 </div>
             <div className='col-span-4 md:col-span-1 shadow-xl shadow-red-200 rounded-xl p-4' >

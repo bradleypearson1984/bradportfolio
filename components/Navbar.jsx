@@ -71,6 +71,11 @@ className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z
                 <Link href="/#contact" scroll={false} >
                     <li className='ml-10 text-sm uppercase hover:border-b' >Contact</li>
                 </Link>
+                <Link href="//Resume_2023_Brad_Pearson.pdf" target={'_blank'}
+                className='ml-10 text-sm uppercase hover:border-b'
+                download={true}
+                >Resume 
+                </Link>
             </ul>
             <div onClick={handleNav} className='md:hidden' >
                 <AiOutlineMenu size={25} />
@@ -86,7 +91,7 @@ className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z
                 <div>
                     <div className='flex w-full items-center justify-between' >
                         <Link href="/#home" scroll={false} >
-                        <Image src="/logo2hex.png" width='87' height='35' alt="/" invert-1 />
+                        <Image src="/logo2hex.png" width='87' height='35' alt="/"  />
                         </Link>
                         <div onClick={handleNav} className='rounded-full shadow-lg shadow-pink-300 p-3 cursor-pointer' >
                             <AiOutlineClose /> 
@@ -115,6 +120,11 @@ className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z
                     <Link href='/#contact'scroll={false} >
                         <li onClick={()=> setNav(false)} className='py-4 text-sm' >Contact </li>
                     </Link>
+                    <Link href="/Resume_2023_Brad_Pearson.pdf" target={'_blank'}
+                className='py-4 text-sm'
+                download={true}
+                >Resume 
+                </Link>
                 </ul>
                 <div className='pt-40' >
                     <p className='uppercase tracking-widest text-[#5651e5] ' >Let's Connect </p>
@@ -122,10 +132,16 @@ className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z
             <div className='flex items-center justify-evenly my-4 w-full sm:w-[80%]' >
 
                 <div className='rounded-full shadow-lg shadow-pink-400 p-3 cursor-pointer hover:scal-105 ease-in duration-300' >
+                    <a href="https://www.linkedin.com/in/bradpearsonmedia/" target={'_blank'} >
                     <FaLinkedinIn />
+                    </a>
                 </div>
+                        
                 <div className='rounded-full shadow-lg shadow-pink-400 p-3 cursor-pointer hover:scal-105 ease-in duration-300' >
+                    <a href="https://github.com/bradleypearson1984" target={'_blank'} >
                     <FaGithub />
+                    </a>
+
                 </div>
                 {/* <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scal-105 ease-in duration-300' >
                     <AiOutlineMail />

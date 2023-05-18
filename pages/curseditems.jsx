@@ -23,8 +23,14 @@ const curseditems = () => {
                         cursed items, and signed in members can edit, delete and upload new items, including
                         a picture, description of the item and the curse that it inflicts.
                     </p>
+                    <a href="https://cursed-items.herokuapp.com/items" target={'_blank'} >
                     <button className='px-8 py-2 mt-4 mr-8' >Demo</button>
+                    </a>
+
+                    <a href="https://git.generalassemb.ly/brad-pearson-forever/Project-2" target={'_blank'} >
                     <button className='px-8 py-2 mt-4' >Code</button> 
+                    </a>
+
 
                 </div>
             <div className='col-span-4 md:col-span-1 shadow-xl shadow-red-200 rounded-xl p-4' >

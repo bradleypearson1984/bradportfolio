@@ -20,10 +20,14 @@ const Main = () => {
                
                 <div className='flex items center justify-evenly max-w-[330px] mx-auto py-4' >
                     <div  className='rounded-full shadow-lg shadow-pink-100 p-6 cursor-pointer hover:scal-110 ease-in duration-300' >
+                    <a href="https://www.linkedin.com/in/bradpearsonmedia/" target={'_blank'} >
                         <FaLinkedinIn />
+                    </a>
                     </div>
                     <div  className='rounded-full shadow-lg shadow-pink-100 p-6 cursor-pointer hover:scal-110 ease-in duration-300' >
+                    <a href="https://github.com/bradleypearson1984" target={'_blank'} >
                         <FaGithub />
+                    </a>
                     </div>
                     {/* <div  className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scal-110 ease-in duration-300' >
                         <AiOutlineMail />

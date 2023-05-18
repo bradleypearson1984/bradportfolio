@@ -14,9 +14,9 @@ const Main = () => {
                 <p className='uppercase text-sm tracking-widest text-gray-600'>
                     Man + Machine
                 </p>
-                <h1 className='py-4 text-purple-900' >Hi I'm <span className='text-[#f34f85]'>  Brad Pearson</span></h1>
-                <h1 className='py-2 text-purple-900' > A Human Person </h1>
-                <h1 className='py-2 text-purple-900' > Who Can Talk To <span className='text-[#e1287e]'>  Machines </span></h1>
+                <h1 className='py-4 text-purple-900  dark:text-pink-200' >Hi I'm <span className='text-[#f34f85]  dark:text-green-200'>  Brad Pearson</span></h1>
+                <h1 className='py-2 text-purple-900  dark:text-pink-200' > A Human Person </h1>
+                <h1 className='py-2 text-purple-900  dark:text-pink-200 ' > Who Can Talk To <span className='text-[#e1287e] dark:text-green-200'>  Machines </span></h1>
                
                 <div className='flex items center justify-evenly max-w-[330px] mx-auto py-4' >
                     <div  className='rounded-full shadow-lg shadow-pink-100 p-6 cursor-pointer hover:scal-110 ease-in duration-300' >

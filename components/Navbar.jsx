@@ -72,7 +72,7 @@ className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z
                     <li className='ml-10 text-sm uppercase hover:border-b' >Contact</li>
                 </Link>
                 <Link href="//Resume_2023_Brad_Pearson.pdf" target={'_blank'}
-                className='ml-10 text-sm uppercase hover:border-b'
+                className='ml-10 text-sm uppercase hover:border-b dark:text-green-100'
                 download={true}
                 >Resume 
                 </Link>
@@ -85,7 +85,7 @@ className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z
 
         <div className={
             nav 
-            ? ' fixed left-0 top-0 w-[75%] h-screen  bg-gradient-to-b from-teal-100 to-purple-200 p-10 ease-in duration-500 ' 
+            ? ' fixed left-0 top-0 w-[75%] h-screen  bg-gradient-to-b from-teal-100 to-purple-200 p-10 ease-in duration-500 dark:bg-gradient-to-l from-gray-900 via-emerald-900 to-purple-900' 
             : 'fixed left-[-100%] top-0  p-10 ease-in-duration-500'} >
             <div >
                 <div>
@@ -121,7 +121,7 @@ className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z
                         <li onClick={()=> setNav(false)} className='py-4 text-sm' >Contact </li>
                     </Link>
                     <Link href="/Resume_2023_Brad_Pearson.pdf" target={'_blank'}
-                className='py-4 text-sm'
+                className='py-4 text-sm dark:text-green-100'
                 download={true}
                 >Resume 
                 </Link>

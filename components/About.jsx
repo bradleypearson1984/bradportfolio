@@ -7,11 +7,11 @@ const About = () => {
             <div className='col-span-2' >
                 <p className=' uppercase text-xl tracking-widest text-[#5651e5] '>About</p>
                 <h2 className='py-4' >Who I Am</h2>
-                <p className='py-2 text-gray-600' >I am a human guy</p>
-                <p className='py-2 text-gray-600' >I am skilled in developing and designing front end web applications </p>
-                <p className='py-2 text-gray-600' >I have real bones and blood</p>
-                <p className='py-2 text-gray-600' >I know what it is to love, to laugh, to cry</p>
-                <p className='py-2 text-gray-600' >Check out my latest projects </p>
+                <p className='py-2 text-gray-600  dark:text-pink-200 '  >I am a human guy</p>
+                <p className='py-2 text-gray-600  dark:text-pink-200 '  >I am skilled in developing and designing front end web applications </p>
+                <p className='py-2 text-gray-600  dark:text-pink-200 '  >I have real bones and blood</p>
+                <p className='py-2 text-gray-600  dark:text-pink-200 '  >I know what it is to love, to laugh, to cry</p>
+                <p className='py-2 text-gray-600  dark:text-pink-200 '  >Check out my latest projects </p>
 
             </div>
             <div className='w-full h-auto m-auto shadow-xl shadow-pink-200 flex items-center justify-center p-4 hover:scale-105 ease-in duration-300' >

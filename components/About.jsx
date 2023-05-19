@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/Link'
+import Link from 'next/link'
 const About = () => {
   return (
     <div id='about' className='w-full md:h-screen p-2 flex items-center py-16' >

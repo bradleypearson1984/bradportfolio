@@ -120,7 +120,7 @@ className={shadow ? 'fixed w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z
                     <Link href='/#contact'scroll={false} >
                         <li onClick={()=> setNav(false)} className='py-4 text-sm' >Contact </li>
                     </Link>
-                    <Link href="/Resume_2023_Brad_Pearson.pdf" target={'_blank'}
+                    <Link href="/Resume 2023 Brad Pearson May2023.pdf" target={'_blank'}
                 className='py-4 text-sm dark:text-green-100'
                 download={true}
                 >Resume 

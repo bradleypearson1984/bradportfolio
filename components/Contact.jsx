@@ -10,7 +10,7 @@ function Contact() {
   return (
     <div className='w-full lg:g-screen' >
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full ' > 
-            <p className='text-xl tracking-widest uppercase text-[] dark:text-pink-500 ' >
+            <p className='text-xl tracking-widest uppercase text-pink-400 dark:text-pink-500 ' >
                 Contact
             </p>
             <h2 className='py-4' >Human to Human Contact, it's What We Crave</h2>

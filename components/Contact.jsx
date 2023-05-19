@@ -10,7 +10,7 @@ function Contact() {
   return (
     <div className='w-full lg:g-screen' >
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full ' > 
-            <p className='text-xl tracking-widest uppercase text-[]  ' >
+            <p className='text-xl tracking-widest uppercase text-[] dark:text-pink-500 ' >
                 Contact
             </p>
             <h2 className='py-4' >Human to Human Contact, it's What We Crave</h2>
@@ -80,7 +80,7 @@ function Contact() {
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2' >
                     <div className='flex flex-col' >
                         <label className='uppercase text-sm py-2 dark:text-pink-100 ' >Name</label>
-                        <input  className='border-2 rounded-lg p-3 flex border-gray-300' 
+                        <input  className='border-2 rounded-lg p-3 flex border-gray-300 dark:shadow-lg dark:shadow-teal-400' 
                                  id="name"
                                  type="text" 
                                  name="name"
@@ -92,7 +92,7 @@ function Contact() {
                 <div className='flex flex-col py-2' >
                         <label className='uppercase text-sm py-2 dark:text-pink-100  ' >Email</label>
                         <input  
-                        className='border-2 rounded-lg p-3 flex border-gray-300' 
+                        className='border-2 rounded-lg p-3 flex border-gray-300 dark:shadow-lg dark:shadow-teal-400' 
                         type="email" 
                         id="email" 
                         name="email"
@@ -101,7 +101,7 @@ function Contact() {
                 
                 <div className='flex flex-col py-2' >
                         <label className='uppercase text-sm py-2  dark:text-pink-100  ' >Message</label>
-                        <textarea className='border-2 rounded-lg border-gray-300 ' 
+                        <textarea className='border-2 rounded-lg border-gray-300 dark:shadow-lg dark:shadow-teal-400' 
                         rows='10'
                         id="message"
                         name="message"

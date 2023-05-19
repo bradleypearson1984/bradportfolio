@@ -9,7 +9,7 @@ html {
 @layer base {
   body {
     font-family: 'Rajdhani', sans-serif;
-    @apply  text-[#1f2937] tracking-wide bg-gradient-to-r from-gray-100   to-gray-300 
+    @apply  text-[#1f2937] tracking-wide bg-gradient-to-r from-gray-100   to-gray-400 
     dark:bg-gradient-to-r dark:from-gray-900 dark:via-indigo-600 dark:to-purple-900
     
   }
